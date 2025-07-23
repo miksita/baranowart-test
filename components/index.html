@@ -1,0 +1,210 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <title>Baranowart</title>
+    <style>
+        :root {
+            --color-header-footer: #005248;
+            --color-text-header-footer: #FFFFFF;
+
+            --color-accent: #A38256;
+            --color-accent-hover: #e4e4e4;
+            --color-bg-input: white;
+
+            --color-border: 1px solid #D2D2D2;
+
+            --color-bg-gray: #fafafa;
+            --color-bg-white: #FFFFFF;
+
+            --color-text-primary: #717171;
+            --color-text-secondary: #444444;
+            --color-text-button: #252525;
+
+            --border-radius-sm: 8px;
+            --border-radius-md: 16px;
+
+
+        }
+
+        .btn-primary {
+            color: var(--color-text-button);
+            background-color: var(--color-accent);
+            border-radius: var(--border-radius-sm);
+            border: var(--color-border-accent);
+            transition: background-color 0.3s;
+
+        }
+
+        .btn-primary:hover {
+            color: var(--color-text-primary);
+            background-color: var(--color-bg-gray);
+            border: var(--color-border);
+        }
+
+
+        .btn-secondary {
+            border-radius: var(--border-radius-sm);
+            color: var(--color-text-primary);
+            background-color: var(--color-bg-gray);
+            border: var(--color-border);
+            transition: background-color 0.3s;
+
+        }
+
+        .btn-secondary:hover {
+            color: var(--color-text-button);
+            background-color: var(--color-accent);
+            border: var(--color-border-accent);
+
+        }
+
+
+        .input-primary {
+            min-width: 250px;
+            border: var(--color-border);
+            border-radius: var(--border-radius-sm);
+            background-color: var(--color-bg-input);
+        }
+
+        .input-primary::placeholder {
+            color: var(--color-text-primary);
+        }
+
+
+        .form-check-input:checked {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+
+        .card {
+            background-color: var(--color-bg-white);
+            border: var(--color-border);
+            border-radius: var(--border-radius-md);
+            color: var(--color-text-primary);
+        }
+
+
+        .section-bg-white {
+            background-color: var(--color-bg-white);
+            color: var(--color-text-primary);
+            width: 100%;
+
+        }
+
+        .section-bg-gray {
+            background-color: var(--color-bg-gray);
+            color: var(--color-text-primary);
+            width: 100%;
+
+        }
+
+        .input-button-form {
+            width: 100%;
+        }
+
+        @media (max-width: 767.98px) {
+            .input-button-form .btn-primary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Секция главной страницы с белым background -->
+    <section class="section-bg-white py-5">
+        <div class="container">
+            <div class="text-center text-md-start mb-4">
+                <h1 class="fs-3 fs-md-2 mb-2">Избранные художники</h1>
+                <p class="fs-6">Познакомьтесь с художниками, формирующими лицо современной русской живописи.
+                    Каждую неделю мы представляем авторов с ярким стилем, глубоким содержанием и сильной визуальной
+                    подачей.</p>
+            </div>
+
+            <div class="content">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция главной страницы с серым background -->
+    <section class="section-bg-gray py-5">
+        <div class="container">
+            <div class="text-center text-md-start mb-4">
+                <h1 class="fs-3 fs-md-2 mb-2">Избранные художники</h1>
+                <p class="fs-6">Познакомьтесь с художниками, формирующими лицо современной русской живописи.
+                    Каждую неделю мы представляем авторов с ярким стилем, глубоким содержанием и сильной визуальной
+                    подачей.</p>
+            </div>
+
+            <div class="content">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container py-5">
+
+        <!-- Акцентная кнопка -->
+        <button type="submit" class="btn-primary px-3 py-2 fs-6">Кнопка главная</button>
+
+
+        <br class="mb-4">
+
+
+        <!-- Второстепенная кнопка -->
+        <button type="submit" class="btn-secondary px-3 py-2 fs-6">Кнопка второстепенная</button>
+
+
+        <br class="mb-4">
+
+
+        <!-- Поле ввода -->
+        <input type="" class="input-primary form-control px-3 py-2 fs-6" placeholder="Введите..." required>
+
+
+        <br class="mb-4">
+
+
+        <!-- Check кнопка -->
+        <input class="form-check-input" type="checkbox" id="">
+
+
+        <br class="mb-4">
+
+
+        <!-- Карточка -->
+        <article class="col-md-6 col-lg-4 ">  <!--  3 в ряд -->
+            <div class="card p-4 text-center text-md-start">
+                <h3 class="fs-4">Уникальная коллекция</h1>
+                    <p class="fs-6">Уникальная коллекция российских художников: Мы сотрудничаем только
+                        спроверенными, профессиональными мастерами, чьи работы отличаются оригинальностью и высочайшим
+                        качеством
+                        исполнения.</p>
+            </div>
+        </article>
+
+
+        <br class="mb-4">
+
+
+        <!-- Форма вида input + button -->
+
+        <form class="input-button-form mb-3 d-flex flex-column flex-md-row gap-3">
+            <input type="" class="input-primary form-control px-3 py-2" placeholder="Введите..." required>
+            <button type="submit" class="btn-primary px-3 py-2">Кнопка</button>
+        </form>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
